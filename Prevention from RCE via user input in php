@@ -1,0 +1,12 @@
+This vulnerability is classified as critical because it can lead to full system compromise, data breaches, and service disruption.
+
+1. Apply Principle of Least Privilege
+Run web server with minimal permissions, No root/admin execution, and Restrict file access
+
+2. Use Web Application Firewall (WAF)
+A WAF can help block malicious requests:
+Detects suspicious patterns, Blocks command injection attempts
+
+3. Use safe APIs or predefined commands, not raw input.
+Do NOT pass user input into functions like:
+system(), exec(), shell_exec(), passthru()
